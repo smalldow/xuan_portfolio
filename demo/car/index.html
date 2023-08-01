@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-tw" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>台灣風雲車｜台灣人心目中最好的車</title>
+		<meta name="title" content="台灣風雲車｜台灣人心目中最好的車"/>
+    <meta name="description" content="自己的風雲車自己選，專屬於台灣人的車輛票選活動，選出你心目中的台灣風雲車。"/>
+		<meta name="keywords" content="台灣風雲車,風雲車,投票,最受歡迎的車,車輛票選,車"/>
+		 <meta property="og:keywords"  content="台灣風雲車,風雲車,投票,最受歡迎的車,車輛票選,車"/>
+		<meta property="og:title" content="台灣風雲車｜台灣人心目中最好的車"/>
+		<meta property="og:description" content="自己的風雲車自己選，專屬於台灣人的車輛票選活動，選出你心目中的台灣風雲車。" />
+		<meta property="og:image" content="image/ogimage.jpg" />
+		<link rel="icon" type="image/png" href="image/Logo.png" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+		<script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+	</head>
+<body>
+    <header>
+				<nav>
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="menu">
+									<div class="menu-logo-pc">
+											<a href="index.html">
+												<img src="image/tw_img.png" class="logo-white" alt="">
+												<img src="image/tw_img-b.png" class="logo-black" alt="">
+											</a>
+									</div>		
+
+									<!-- <UPDATE> 9/15 -->
+									<ul class="menu-pc">
+											<li><a href="#vote">即時票數</a></li>
+											<li><a href="#method">投票方式</a></li>
+											<li><a href="#awards">獎項明細</a></li>
+											<li class="drop">
+												<a href="javascript:void(0)">得獎名單</a>
+												<ul class="dropdowns">
+													<li><a href="list.html" class="link" >2021年</a></li>
+													<li><a href="javascript:void(0)" class="link dislink">2022年</a></li>
+													<li><a href="javascript:void(0)" class="link dislink">2023年</a></li>
+												</ul>
+											</li>
+											<li class="drop lastdrop">
+												<a href="javascript:void(0)" >年度冠軍</a>
+												<ul class="dropdowns">
+													<li><a href="champion.html" class="link">2021年</a></li>
+													<li><a href="javascript:void(0)" class="link dislink">2022年</a></li>
+													<li><a href="javascript:void(0)" class="link dislink">2023年</a></li>
+												</ul>
+											</li>
+											<li class="goMethodBtn">
+												<a href="javascript:void(0)">
+													開始投票
+												</a>
+											</li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="menu-mb">
+					<div class="menu-section">
+						<div class="menu-mb-logo">
+							<a href="index.html">
+								<img src="image/tw_img.png" class="logo-white" alt="">
+								<img src="image/tw_img-b.png" class="logo-black" alt="">
+							</a>
+					</div>
+					<!-- <UPDATE> 9/15 -->
+						<div class="menu-mb-text">
+							<a href="javascript:void(0)">開始投票</a>
+						</div>
+						<div class="menu-toggle">
+							<div class="one"></div>
+							<div class="two"></div>
+							<div class="three"></div>
+						</div>
+						<div class="navbar">
+							<ul role="navigation" class="hidden mb-ul">
+								<li class="mb-li"><a href="#vote">即時票數</a></li>
+								<li class="mb-li"><a href="#method">投票方式</a></li>
+								<li class="mb-li"><a href="#awards">獎項明細</a></li>
+								<li class="drop-button2">
+									<a href="javascript:void(0)">得獎名單<i class="fas fa-caret-down"></i></a>
+									<ul class="mb-drop-ul2">
+										<li><a href="list.html" class="link openlink">2021年</a></li>
+										<li><a href="javascript:void(0)" class="link dislink">2022年</a></li>
+										<li><a href="javascript:void(0)" class="link dislink">2023年</a></li>
+									</ul>
+								</li>
+								<li class="drop-button">
+									<a href="javascript:void(0)" >年度冠軍<i class="fas fa-caret-down"></i>
+									</a>
+									<ul class="mb-drop-ul">
+										<li><a href="champion.html" class="link openlink">2021年</a></li>
+										<li><a href="javascript:void(0)" class="link dislink">2022年</a></li>
+										<li><a href="javascript:void(0)" class="link dislink">2023年</a></li>
+									</ul>
+								</li>
+								<li class="mb-li">
+									<a href="javascript:void(0)">
+										開始投票
+									</a>
+								</li>
+								<!-- <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+    </header>
+		<main>
+	<section class="video" >
+		<div class="custom-video-area" id="custom-popout-video">
+			<div class="customBtnlayout">
+				<div class="container" >
+					<div class="row">
+						<div class="col">
+								<div class="topImg">
+									<div class="position">
+										<!-- <img  class="logo" src="image/tw_img.png" alt=""> -->
+										<!-- <div class="video-controls buttonIcon">
+											<div class="play-button mini no-before" title="Play/Pause Video">
+												<img src="image/play_btn.png" alt="">
+											</div>
+										</div> -->
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="video-controls playing control">
+						<!-- <div class="top-wrapper">
+							<div class="progress-bar">
+								<span class="buffer-bar"></span>
+								<span class="time-bar"></span>
+							</div>
+						</div> -->
+						<div class="row">
+							<div class="column">
+								<div class="bottom-wrapper">
+									<div class="play-button mini" title="Play/Pause Video">
+									</div>
+									<div class="time">
+										<span class="current">00:00</span> / <span class="duration">00:00</span>
+									</div>
+									
+									<div class="sound-button sound-med" title="Mute/Unmute sound"></div>
+									<div class="volume" title="Set volume">
+										<span class="volume-bar"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<video class="video-element" id="video-element" preload="auto" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" preload="yes">
+				<source src="image/4k.mp4">
+				</video>
+		</div>
+</section>
+        <div class="method reciprocal">
+					<div class="method-logo time">
+						<img class="twbg" src="image/tw_img15.png" alt=""></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="time loop">
+                            <div class="time-img">
+                                <img src="image/redshape_TIMER.png" alt="">
+                            </div>
+                            <div class="time-layout" data-aos="zoom-in">
+                                <div class="time-layout-title" >
+                                    剩餘時間
+                                </div>
+																<div class="time-img">
+																	<img src="image/redshape_TIMER.png" alt="">
+															</div>
+                                <div class="time-layout-text">
+																		<div class="timer">
+																			<div class="timer--clock">
+																				<div class="box">
+																					<div class="text-box">
+																						<div class="number">
+																							<div class="day-group clock-display-grp">
+																									<div class="first number-grp">
+																										<div class="number-grp-wrp">
+																												<div class="num num-0"><p>0</p></div>
+																												<div class="num num-1"><p>1</p></div>
+																												<div class="num num-2"><p>2</p></div>
+																												<div class="num num-3"><p>3</p></div>
+																												<div class="num num-4"><p>4</p></div>
+																												<div class="num num-5"><p>5</p></div>
+																												<div class="num num-6"><p>6</p></div>
+																												<div class="num num-7"><p>7</p></div>
+																												<div class="num num-8"><p>8</p></div>
+																												<div class="num num-9"><p>9</p></div>
+																										</div>
+																									</div>
+																									<div class="second number-grp">
+																										<div class="number-grp-wrp">
+																												<div class="num num-0"><p>0</p></div>
+																												<div class="num num-1"><p>1</p></div>
+																												<div class="num num-2"><p>2</p></div>
+																												<div class="num num-3"><p>3</p></div>
+																												<div class="num num-4"><p>4</p></div>
+																												<div class="num num-5"><p>5</p></div>
+																												<div class="num num-6"><p>6</p></div>
+																												<div class="num num-7"><p>7</p></div>
+																												<div class="num num-8"><p>8</p></div>
+																												<div class="num num-9"><p>9</p></div>
+																										</div>
+																									</div>
+																							</div> 
+																						</div>
+																						<div class="sec">
+																							Day
+																						</div>
+																					</div>
+																					<div class="text-box"> 
+																						<div class="number">
+																							<div class="hour-group clock-display-grp">
+																								<div class="first number-grp">
+																									 <div class="number-grp-wrp">
+																											<div class="num num-0"><p>0</p></div>
+																											<div class="num num-1"><p>1</p></div>
+																											<div class="num num-2"><p>2</p></div>
+																											<div class="num num-3"><p>3</p></div>
+																											<div class="num num-4"><p>4</p></div>
+																											<div class="num num-5"><p>5</p></div>
+																											<div class="num num-6"><p>6</p></div>
+																											<div class="num num-7"><p>7</p></div>
+																											<div class="num num-8"><p>8</p></div>
+																											<div class="num num-9"><p>9</p></div>
+																									 </div>
+																								</div>
+																								<div class="second number-grp">
+																									 <div class="number-grp-wrp">
+																											<div class="num num-0"><p>0</p></div>
+																											<div class="num num-1"><p>1</p></div>
+																											<div class="num num-2"><p>2</p></div>
+																											<div class="num num-3"><p>3</p></div>
+																											<div class="num num-4"><p>4</p></div>
+																											<div class="num num-5"><p>5</p></div>
+																											<div class="num num-6"><p>6</p></div>
+																											<div class="num num-7"><p>7</p></div>
+																											<div class="num num-8"><p>8</p></div>
+																											<div class="num num-9"><p>9</p></div>
+																									 </div>
+																								</div>
+																						 	</div>
+																						</div>
+																						<div class="sec">
+																								Hour
+																						</div>
+																					</div>
+																				</div>
+																				<div class="box">
+																					<div class="text-box">
+																						<div class="number">
+																							<div class="minutes-group clock-display-grp">
+																								<div class="first number-grp">
+																									 <div class="number-grp-wrp">
+																											<div class="num num-0"><p>0</p></div>
+																											<div class="num num-1"><p>1</p></div>
+																											<div class="num num-2"><p>2</p></div>
+																											<div class="num num-3"><p>3</p></div>
+																											<div class="num num-4"><p>4</p></div>
+																											<div class="num num-5"><p>5</p></div>
+																											<div class="num num-6"><p>6</p></div>
+																											<div class="num num-7"><p>7</p></div>
+																											<div class="num num-8"><p>8</p></div>
+																											<div class="num num-9"><p>9</p></div>
+																									 </div>
+																								</div>
+																								<div class="second number-grp">
+																									 <div class="number-grp-wrp">
+																											<div class="num num-0"><p>0</p></div>
+																											<div class="num num-1"><p>1</p></div>
+																											<div class="num num-2"><p>2</p></div>
+																											<div class="num num-3"><p>3</p></div>
+																											<div class="num num-4"><p>4</p></div>
+																											<div class="num num-5"><p>5</p></div>
+																											<div class="num num-6"><p>6</p></div>
+																											<div class="num num-7"><p>7</p></div>
+																											<div class="num num-8"><p>8</p></div>
+																											<div class="num num-9"><p>9</p></div>
+																									 </div>
+																								</div>
+																						 </div>
+																						</div>
+																						<div class="sec">
+																								Min
+																						</div>
+																					</div>
+																					<div class="text-box">
+																						<div class="number">
+																							<div class="seconds-group clock-display-grp">
+																								<div class="first number-grp">
+																									 <div class="number-grp-wrp">
+																											<div class="num num-0"><p>0</p></div>
+																											<div class="num num-1"><p>1</p></div>
+																											<div class="num num-2"><p>2</p></div>
+																											<div class="num num-3"><p>3</p></div>
+																											<div class="num num-4"><p>4</p></div>
+																											<div class="num num-5"><p>5</p></div>
+																											<div class="num num-6"><p>6</p></div>
+																											<div class="num num-7"><p>7</p></div>
+																											<div class="num num-8"><p>8</p></div>
+																											<div class="num num-9"><p>9</p></div>
+																									 </div>
+																								</div>
+																								<div class="second number-grp">
+																									 <div class="number-grp-wrp">
+																											<div class="num num-0"><p>0</p></div>
+																											<div class="num num-1"><p>1</p></div>
+																											<div class="num num-2"><p>2</p></div>
+																											<div class="num num-3"><p>3</p></div>
+																											<div class="num num-4"><p>4</p></div>
+																											<div class="num num-5"><p>5</p></div>
+																											<div class="num num-6"><p>6</p></div>
+																											<div class="num num-7"><p>7</p></div>
+																											<div class="num num-8"><p>8</p></div>
+																											<div class="num num-9"><p>9</p></div>
+																									 </div>
+																								</div>
+																						 </div>
+																						</div>
+																						<div class="sec">
+																								Sec
+																						</div>
+																					</div>
+																				</div>
+																		 </div>
+																		<div class="reload">
+																				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 65 65" enable-background="new 0 0 65 65" xml:space="preserve">
+																					<path fill="#2b2b2b" d="M60.2,2.5c-2.3-0.2-4.4,1.5-4.6,3.9l-0.2,2.3c-6-5.6-13.8-8.7-22-8.7C15.5,0,0.9,14.5,0.9,32.4c0,17.9,14.5,32.4,32.4,32.4
+																							c12.3,0,23.5-6.9,29-17.9c1.1-2.1,0.2-4.7-1.9-5.7c-2.1-1.1-4.7-0.2-5.7,1.9c-4.1,8.1-12.3,13.2-21.4,13.2
+																							c-13.2,0-23.9-10.7-23.9-23.9c0-13.2,10.7-23.9,23.9-23.9c6.1,0,11.9,2.3,16.4,6.5l-3.4-0.3c-2.3-0.2-4.4,1.5-4.6,3.9
+																							c-0.2,2.3,1.5,4.4,3.9,4.6l12.7,1.1c0.1,0,0.3,0,0.4,0c1,0,2-0.3,2.7-1c0.9-0.7,1.4-1.8,1.5-2.9l1.2-13.4
+																							C64.3,4.7,62.5,2.7,60.2,2.5z"/>
+																				</svg>
+																		</div>
+																	</div>
+																</div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+			 <div class="vote" id="vote">
+				 <div class="shadow"></div>
+					<div class="vote-title" data-aos="fade-up">
+						<div class="title">即時票數</div>
+					</div>
+					<div class="container" data-aos="fade-up" >
+						<div class="row">
+							<div class="col">
+							  <div class="voteMb">
+									<div class="mb voteMbSet">
+										<div class="voteMbSet-layout">
+											<div class="vote-all">
+												<button type="button" onclick="popup()">所有級距</button>
+											</div>
+											<div class="vote-year">
+												<button type="button" onclick="board()">年度風雲車</button>
+											</div>
+											<div class="vote-year">
+												<button type="button" >最佳服務廠牌</button>
+											</div>
+											<div class="vote-changeBtn firstBtn">
+												<button class="btn-grid btn-active" type="button" onclick="changeStyleClick('gird')"><i class="fa fa-th" aria-hidden="true"></i></button>
+											</div>
+											<div class="vote-changeBtn">
+												<button class="btn-list" type="button"><i class="fa fa-list-ul" aria-hidden="true" onclick="changeStyleClick('list')"></i> </button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vote-select-box pc">
+									<div class="vote-all">
+										<button type="button" onclick="popup()">所有級距</button>
+									</div>
+									<div class="vote-changeBtn">
+										<button class="btn-grid btn-active" type="button" onclick="changeStyleClick('gird')"><i class="fa fa-th" aria-hidden="true"></i></button>
+										<button class="btn-list" type="button"><i class="fa fa-list-ul" aria-hidden="true" onclick="changeStyleClick('list')"></i> </button>
+									</div>
+									<div class="vote-tab-box">
+										<button class="tab-arrow tab-prev" onclick="tabArrowClick()"></button>
+										<div class="vote-tab">
+											<div id="vote-tab-layout" class="vote-tab-layout slider-tab"></div>
+											<div class="slider-nav"></div>
+										</div>
+										<button class="tab-arrow tab-next btn-next" onclick="tabArrowClick()"></button>
+									</div>
+									<div class="vote-year">
+										<button type="button" onclick="board()">年度風雲車</button>
+									</div>
+									<div class="vote-year">
+										<button type="button" >最佳服務廠牌</button>
+									</div>
+								</div>
+								<!-- mb -->
+								<!-- slider -->
+								<div class="slider-box">
+									<section class="slider"></section>
+									<div class="slider-arrow-box">
+										<div class="slider-prev"></div>
+										<div class="slider-next btn-next"></div>
+									</div>
+								</div>
+								<!-- list -->
+								<div class="list-box hidden"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+				<div class="method" id="method">
+					<div class="method-logo">
+						<img class="twbg" src="image/tw_img15.png" alt=""></div>
+					<div class="container">
+						<div class="method-layout row">
+								<div class="method-layout-title" data-aos="fade-up">
+										投票方式
+								</div>
+								<div class="method-layout-con">
+										<div class="col-3"  data-aos="fade-up"
+										data-aos-anchor-placement="top-center">
+									<div class="box">
+										<div class="icon">
+											<img src="image/Shape1.png" alt="">
+										</div>
+										<div class="introduce">
+											<div class="introduce-title firstTitle">
+												手機認證每人一次記名投票
+											</div>
+											<div class="introduce-con firstCon">
+												使用台灣風雲車網頁進行投票，每人一次記名投票
+											</div>
+										</div>
+										<div class="numImg">
+											<img src="image/1.png" alt="">
+										</div>
+									</div>
+										</div>
+										<div class="col-3"  data-aos="fade-up"
+										data-aos-anchor-placement="top-center">
+											<div  class="box">
+												<div class="icon">
+													<img src="image/Shape2.png" alt="">
+												</div>
+												<div class="introduce">
+													<div class="introduce-title">
+														每人每級距限投一次
+													</div>
+													<div class="introduce-con twoCon">
+														需完成18個級距之車款投票，每人每級距限投一次，限更改一次投票車款
+													</div>
+												</div>
+												<div class="numImg">
+													<img src="image/2.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="col-3" d data-aos="fade-up"
+										data-aos-anchor-placement="top-center">
+											<div  class="box">
+												<div class="icon">
+													<img src="image/Shape3.png" alt="">
+												</div>
+												<div class="introduce">
+													<div class="introduce-title lastTitle">
+														完成投票即符合抽獎資格
+													</div>
+													<div class="introduce-con lastCon ">
+														完成投票也可隨時關注即時投票數據
+													</div>
+												</div>
+												<div class="numImg">
+													<img src="image/3.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="con-btn" data-aos="fade-up">
+											<button onclick="rule()" type="button">
+												抽獎規則
+											</button>
+										</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="vote awards" id="awards">
+					<div class="shadow"></div>
+					<div class="vote-title" data-aos="fade-up">
+						<div class="title">獎項明細</div>
+						<span class="ex">
+							得獎者須依照中華民國稅法規定課稅
+						</span>
+					</div>
+					<div class="container">
+							<div class="row">
+									<div class="col">
+									
+										<div class="awards-all" >
+											<div class="awards-con" data-aos="fade-up">
+											
+												<div class="awards-con-box">
+													<img src="image/car_img.png" alt="">
+													<ul class="box-text">
+														<li>
+															汽車一輛
+														</li>
+														<!-- <li>1名</li> -->
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+												<div class="awards-con-box">
+													<img src="image/Layer14.png" alt="">
+													<ul class="box-text">
+														<li>
+															ORO胎壓偵測器
+														</li>
+														<!-- <li>2名</li> -->
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+												<!-- <div class="awards-con-box">
+													<img src="image/Layer17.png" alt="">
+													<ul class="box-text">
+														<li>
+															PAPAGO!
+														</li>
+														<li>2名</li>
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+											-->
+												<div class="awards-con-box">
+													<img src="image/Layer13.png" alt="">
+													<ul class="box-text">
+														<li>
+															GARMIN行車紀錄器
+														</li>
+														<!-- <li>4名</li> -->
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+												<div class="awards-con-box">
+													<img src="image/carshop.png" alt="">
+													<ul class="box-text">
+														<li>
+															車麗屋汽車百貨禮券
+														</li>
+														<!-- <li>5名</li> -->
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+												<div class="awards-con-box">
+													<img src="image/bear.png" alt="">
+													<ul class="box-text">
+														<li>
+															Go車誌獅寶寶
+														</li>
+														<!-- <li>6名</li> -->
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+												<div class="awards-con-box">
+													<img src="image/LEXUS2.png" alt="">
+													<ul class="box-text">
+														<li>
+															LEXUS 品牌精品
+														</li>
+														<!-- <li>2名</li> -->
+													</ul>
+													<div class="awards-con-bottom">
+														<img src="image/Rectangle.png" alt="">
+													</div>
+												</div>
+												<div  class="awards-con__btn">
+													<a href="">
+														馬上去投票
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+									</div>
+							</div>
+					</div>
+        </div>
+				<div id="popup">
+					<img class="twbg" src="image/tw_img15.png" alt="">
+					<div  class="container">
+							<div class="row poolayout">
+								<div class="col popupCol"></div>
+							</div>
+					</div>
+				</div>
+				<div id="rule">
+					<img class="twbg" src="image/tw_img15.png" alt="">
+					<div  class="container">
+						<div class="row  poolayout">
+							<div class="col  ruleCol">
+								<div class="rule-title">
+									抽獎規格
+								</div>
+								<div class="rule-con">
+									依稅法規定，得獎價值超過新台幣1,000元以上者，需繳交身分證影本報稅使用，贈品價值超過新台幣20,000，依法須負擔10%機會中獎稅，並於次年度寄發所得稅扣繳(免)繳憑單；若非中華民國國境內居住支國人(即在中華民國境內居住未達183天之本國人及外國人)，不論得獎人所得之金額，須就中獎所得扣繳20%機會中獎稅，扣繳稅款未超過2,000元，免扣繳(外籍人士不適用)；未滿14歲之兒童中獎，視同監護人中獎，由監護人代為領取。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--年度-->
+				<div id="board">
+					<div onclick="closeBoard()" class="btn-close"><p>CLOSE</p><i class="fas fa-times"></i></div>
+					<div  class="container">
+							<div class="row yearlayout">
+								<div class="col boardCol"></div>
+							</div>
+					</div>
+				</div>
+    </main>
+    <footer>
+			<div class="footer" >
+				<div class="vote-title " style="font-size: 48px;
+				font-weight: bold;
+				letter-spacing: 4.8px;
+				color: #000000;" >
+					特別感謝
+				</div>
+				<div>
+				</div>
+				<div class="container" >
+					<div class="row">
+						<div class="col">
+							<section class="responsive">
+								<div>
+									<img src="image/TOYOTA.png">
+								</div>
+								<div>
+									<img src="image/LEXUS.png">
+								</div>
+								<div>
+									<img src="image/Layer14.png">
+								</div>
+								<div>
+									<img src="image/logo222.png">
+								</div>
+								<div>
+									<img src="image/carshop.png">
+								</div>
+							</section>
+							<div class="copyright"> 
+								<div>
+									<ul class="otherLogo">
+										<li><a href="https://www.buycartv.com/" target="_blank"><img src="image/buycartv.png" alt=""></a></li>
+										<li><a href="https://www.twmotor.com.tw/" target="_blank"><img src="image/twmoton.png" alt=""></a></li>
+										<li><a href="https://tw.appledaily.com/home/" target="_blank"><img src="image/appleonline.png" alt=""></a></li>
+									</ul>
+								</div>
+								<p>
+									專題企劃：台灣年度風雲車 ｜ 建議使用Chrome、Firefox、Safari瀏覽器
+								</p>
+
+								<p>
+									<a href="/pdf/privacy.pdf" target="_blank" class="link-a">
+										隱私權政策
+									</a>
+									| 
+									<a href="/pdf/disclaimer.pdf" target="_blank" class="link-a">
+										免責聲明
+									</a>
+									｜ 
+									<a href="mailto:service@buycartv.com" target="_blank" class="link-a">
+										聯絡我們
+									</a>
+									｜ Copyright©2021 GO車誌. All rights reserved.版權所有
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/custom.js"></script>
+		 <script type="text/javascript" src="js/timer.js"></script>
+		 <script type="text/javascript" src="js/slick.js"></script>
+		 <script type="text/javascript" src="js/popup.js"></script>
+		 <script type="text/javascript" src="js/rule.js"></script>
+		 <script type="text/javascript" src="js/data.js"></script>
+		 <script type="text/javascript" src="js/video.js"></script>
+		 <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 <script>
+		 AOS.init();
+		//  <UPDATE> 9/15
+	 </script>
+	 
+</body>
+</html>

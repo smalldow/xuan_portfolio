@@ -1,0 +1,218 @@
+@import "reset";
+@import "mixin";
+$controls: #fff;
+$icons: 'FontAwesome';
+
+
+.custom-video-area {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  margin: auto;
+  text-align: left;
+  height: 100vh;
+  @include flexCenter;
+
+  video {
+    height: 150vh;
+    width: auto;
+
+    @include pad {
+      height: 100vh;
+      width: auto;
+    }
+
+  }
+}
+
+.video-controls {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0 !important;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 15px 0;
+  transition: all 0.4s ease-in-out;
+
+  &.playing {
+    .play-button {
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f04c";
+        color: white;
+      }
+    }
+  }
+
+
+  .top-wrapper {
+    display: block;
+  }
+
+  .bottom-wrapper {
+    padding: 0 20px 0 20px;
+    display: block;
+  }
+
+  .progress-bar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    background: rgb(255 255 255);
+
+
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 0;
+      height: 100%;
+    }
+
+    .time-bar {
+      z-index: 0;
+      background: #e30000;
+    }
+
+    .buffer-bar {
+      z-index: 0;
+      background: #e30000;
+    }
+  }
+
+
+  .play-button.no-before {
+    &::before {
+      display: none;
+    }
+  }
+
+  .play-button {
+    display: inline-block;
+    width: 24px;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f04b";
+      color: white;
+    }
+
+    &.set {
+      height: 37vh;
+      display: flex;
+      align-items: flex-end;
+      width: 70vh;
+      justify-content: center;
+    }
+
+    img {
+      transform: scale(1);
+      transition: .3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+    }
+  }
+
+  .time {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 12px;
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    color: white;
+  }
+
+  .sound-button {
+    display: inline-block;
+    width: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f028";
+
+      color: white;
+    }
+  }
+
+  .sound-med {
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f028";
+      color: white;
+    }
+  }
+
+  .sound-muted {
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f028";
+      color: white;
+    }
+  }
+
+  .volume {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 70px;
+    height: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-color: rgba(white, 0.6);
+
+    .volume-bar {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      display: block;
+      height: 100%;
+      background-color: white;
+    }
+  }
+
+}
+
+.buttonIcon {
+  text-align: center;
+  height: 100%;
+  top: 520px;
+  left: -40px;
+  right: 0;
+
+  @include pad {
+    top: 340px;
+    left: -60px;
+  }
+}
+
+.customBtnlayout {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh
+}

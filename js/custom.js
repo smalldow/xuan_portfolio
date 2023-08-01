@@ -90,13 +90,13 @@ $(document).ready(function(){
 });
 
 
-$(document).on('click', '.map-point-sm', function() {
+$(document).on('click', '.skill-button button', function() {
   var show = $(this).data('show');
   $(show).removeClass("hide").siblings().addClass("hide");
 });
 
 $(document).ready(function(){
-	$('.map-point-sm').click(function(event){
+	$('.skill-button button').click(function(event){
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 });

@@ -4739,7 +4739,7 @@ var wrapMap = {
 // Support: IE <=9 only
 wrapMap.optgroup = wrapMap.option;
 
-wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.thead;
+wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.= wrapMap.thead;
 wrapMap.th = wrapMap.td;
 
 

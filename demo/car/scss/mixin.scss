@@ -1,0 +1,50 @@
+@mixin pc {
+  @media(min-width:992px) {
+    @content;
+  }
+}
+
+@mixin pcDown {
+  @media(max-width:991px) {
+    @content;
+  }
+}
+
+@mixin pcTopad {
+  @media(max-width:991px) and (min-width:768px) {
+    @content;
+  }
+}
+
+@mixin padUp {
+  @media (min-width:768px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media(max-width:767px) {
+    @content;
+  }
+}
+
+@mixin padTomob {
+  @media(max-width:767px) and (min-width:426px) {
+    @content;
+  }
+}
+
+@mixin mob {
+  @media(max-width:425px) {
+    @content;
+  }
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+
+// 
