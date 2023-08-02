@@ -1,16 +1,13 @@
-
-// timer
-
 TweenLite.defaultEase = Expo.easeOut;
-initEndDate="august 30, 2021 02:22:00";
+initEndDate="august 30, 2023 02:22:00";
 
 countEndDate='';
 let dd,hh,mm,ss;
 
 const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
   let countDown = new Date(initEndDate).getTime(),
       x = setInterval(function() {    
@@ -19,9 +16,9 @@ const second = 1000,
             distance = countDown - now;
 
          dd = Math.floor(distance / (day)),
-           hh = Math.floor((distance % (day)) / (hour)),
-           mm = Math.floor((distance % (hour)) / (minute)),
-           ss = Math.floor((distance % (minute)) / second);
+         hh = Math.floor((distance % (day)) / (hour)),
+         mm = Math.floor((distance % (hour)) / (minute)),
+         ss = Math.floor((distance % (minute)) / second);
 
         //do something later when date is reached
          countEndDate = dd+' '+hh+':'+mm+':'+ss;
@@ -39,29 +36,27 @@ var timerEl = document.querySelector('.timer');
 function initTimer (t) {
    
    var self = this,
-       timerEl = document.querySelector('.timer'),
-       dayGroupEl = timerEl.querySelector('.day-group'),
-        hourGroupEl = timerEl.querySelector('.hour-group'),
-       minutesGroupEl = timerEl.querySelector('.minutes-group'),
-       secondsGroupEl = timerEl.querySelector('.seconds-group'),
-        dayGroup = {
-          firstNum: dayGroupEl.querySelector('.first'),
-          secondNum: dayGroupEl.querySelector('.second')
-       },
+      timerEl = document.querySelector('.timer'),
+      dayGroupEl = timerEl.querySelector('.day-group'),
+      hourGroupEl = timerEl.querySelector('.hour-group'),
+      minutesGroupEl = timerEl.querySelector('.minutes-group'),
+      secondsGroupEl = timerEl.querySelector('.seconds-group'),
+      dayGroup = {
+         firstNum: dayGroupEl.querySelector('.first'),
+         secondNum: dayGroupEl.querySelector('.second')
+      },
       hourGroup = {
           firstNum: hourGroupEl.querySelector('.first'),
           secondNum: hourGroupEl.querySelector('.second')
-       },
-       
-       minutesGroup = {
+      },
+      minutesGroup = {
           firstNum: minutesGroupEl.querySelector('.first'),
           secondNum: minutesGroupEl.querySelector('.second')
-       },
-
-       secondsGroup = {
+      },
+      secondsGroup = {
           firstNum: secondsGroupEl.querySelector('.first'),
           secondNum: secondsGroupEl.querySelector('.second')
-       };
+      };
 
    var time = {
       day: t.split(' ')[0]||0,
@@ -70,28 +65,21 @@ function initTimer (t) {
       sec: t.split(' ')[1].split(':')[2]
    };
    var timeNumbers;
-
    function updateTimer() {
-
       var timestr;
       var date = new Date();
-      
       // date.setDate(time.day);
       date.setHours(time.hour);
       date.setMinutes(time.min);
       date.setSeconds(time.sec);
-      
       var newDate = new Date(date.valueOf() - 1000);
-      
       var temp = newDate.toTimeString().split(" ");
       var tempsplit = temp[0].split(':');
       time.day = (time.day.length==1)?'0'+time.day: time.day;
       time.hour = tempsplit[0];
       time.min = tempsplit[1];
       time.sec = tempsplit[2];
-      
       timestr = time.day + time.hour + time.min + time.sec;
-      
       timeNumbers = timestr.split('');
       updateTimerDisplay(timeNumbers);
         
@@ -100,7 +88,6 @@ function initTimer (t) {
 
       if(timestr != '00000000')
          setTimeout(updateTimer, 1000);
-
    }
 
    function updateTimerDisplay(arr) {
@@ -122,9 +109,7 @@ function initTimer (t) {
       });
 
    }
-   
    setTimeout(updateTimer, 1000);
-
 }
 
 function countdownFinished() {
