@@ -8,19 +8,10 @@ $(document).ready(function(){
         var show = $(this).data('show');
         $(show).removeClass("hide").siblings().addClass("hide");
 	});
-    $('#ebn').click(function () {
-		$('html,body').animate({scrollTop: $('#other_work').offset().top}, "show");
-		return false;
-	});
     $('.card').click(this, function(){
-        var $this = $(this),
-            $thisImage = $this.find( 'img' ),
-            $thisTitle = $this.data( 'title' ),
-            $thisBody = $this.data( 'body' );
-        $('#modal').find( '.header h2' ).html( $thisTitle );
-        $('#modal').find( '.meta' ).html( $thisDate );
-        $('#modal').find( '.body' ).html( $thisBody );
-        $('#modal').find( '.image' ).css( 'background-image', 'url(' + $thisImage[0].src + ')' );
+        $('#modal').find('.header h2').html($(this).data('title'));
+        $('#modal').find('.body').html($(this).data('body'));
+        $('#modal').find('.image').css( 'background-image', 'url('+$(this).find('img')[0].src +')');
         $('#modal').modal();
     });
 });
